@@ -5,6 +5,9 @@
  * 1. Introduction to Java helpful.
  */
 
+import java.util.Arrays;
+
+
 public abstract class Bag {
     /*
      * : Create the following private instance variables
@@ -118,7 +121,7 @@ public abstract class Bag {
         }
 
         else {
-            String item = this.contents[this.numberOfContents];
+            String item = this.contents[this.numberOfContents-1];
             this.contents[this.numberOfContents] = null;
             this.numberOfContents -= 1;
 

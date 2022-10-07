@@ -21,7 +21,7 @@ class BagMain {
             b.enhance();
 
             if (double_enhance_handbags) {
-                b.enhance();
+                if (b instanceof HandBag) {b.enhance();}
             }
 
         }
